@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/box"
+        android:title="Box"
+        android:icon="@drawable/ic_account_box_black_24dp"/>
+    <item
+        android:id="@+id/clothes"
+        android:title="Clothes"
+        android:icon="@drawable/ic_clothes_black_24dp"/>
+
+    <item
+        android:id="@+id/list"
+        android:title="ListView"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/rec"
+        android:title="RecyclerView"
+        android:icon="@drawable/ic_recent_actors_black_24dp"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+
+	printf("Hellow 2020!!!");
+	printf("2017/BIT/050/ps");
+
+return 2020;
+}

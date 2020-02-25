@@ -9,12 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen"
+            android:label="Splash Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".box"
+            android:label="Boxes"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".clothes"
+            android:label="Clothes"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DisplayMessageActivity"
+            android:label="Display Message"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ListView"
+            android:label="ListView"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RecyclerView"
+            android:label="RecyclerView"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity"
+            android:label="Home">
+
         </activity>
     </application>
 

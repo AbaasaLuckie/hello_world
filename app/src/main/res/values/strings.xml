@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">hello world</string>
+    <string name="close">Close</string>
+    <string name="getmessage">Get the Message</string>
 </resources>
