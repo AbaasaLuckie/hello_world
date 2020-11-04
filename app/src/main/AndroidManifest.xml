@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helloworld">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"
+        <activity android:name=".CreateOrEditActivity"></activity>
+        <activity android:name=".SaveFiles" />
+        <activity
+            android:name=".SplashScreen"
             android:label="Splash Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,25 +26,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".box"
+        <activity
+            android:name=".box"
             android:label="Boxes"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".clothes"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".clothes"
             android:label="Clothes"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".DisplayMessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayMessageActivity"
             android:label="Display Message"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ListView"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ListView"
             android:label="ListView"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".RecyclerView"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RecyclerView"
             android:label="RecyclerView"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity"
-            android:label="Home">
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Home" />
 
-        </activity>
+        <receiver android:name=".MyBroadcastReceiver" />
     </application>
 
 </manifest>

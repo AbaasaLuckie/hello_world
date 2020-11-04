@@ -2,4 +2,15 @@
     <string name="app_name">hello world</string>
     <string name="close">Close</string>
     <string name="getmessage">Get the Message</string>
+    <string name="battery_level">Battery Level</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="Add_New">SQLite Savings</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="deletePerson">Delete Person</string>
 </resources>

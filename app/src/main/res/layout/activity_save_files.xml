@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveFiles">
+
+    <TextView
+        android:id="@+id/file_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        android:id="@+id/write_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="writeFileInternalStorage"
+        android:text="Write File Internal Storage"></Button>
+    <Button
+        android:id="@+id/read_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="readFileInternalStorage"
+        android:text="Read File Internal Storage"></Button>
+    <Button
+        android:id="@+id/append_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="appendFileInternalStorage"
+        android:text="Append File"></Button>
+    <Button
+        android:id="@+id/temp_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createTemporaryFile"
+        android:text="Create Temp File"></Button>
+    <Button
+        android:id="@+id/delete_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteFile"
+        android:text="Delete File"></Button>
+    <Button
+        android:id="@+id/write_file_ext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="writeFileExternalStorage"
+        android:text="Write File External Storage"></Button>
+</LinearLayout>
